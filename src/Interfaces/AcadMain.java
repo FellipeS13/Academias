@@ -134,7 +134,7 @@ public class AcadMain extends JFrame {
 				else if (resultado > 20 && resultado < 25) {
 					txtSit.setText("Acima do Peso");
 				}
-				else if (resultado > 25 && resultado < 30) {
+				else if (resultado > 25 && resultado > 30) {
 					txtSit.setText("Ta Obeso");
 				}
 			}
