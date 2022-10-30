@@ -8,6 +8,9 @@ import javax.swing.border.EmptyBorder;
 import javax.swing.JLabel;
 import java.awt.Font;
 import javax.swing.ImageIcon;
+import javax.swing.JButton;
+import java.awt.event.ActionListener;
+import java.awt.event.ActionEvent;
 
 public class AcadTreino2 extends JFrame {
 
@@ -34,7 +37,7 @@ public class AcadTreino2 extends JFrame {
 	 */
 	public AcadTreino2() {
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-		setBounds(100, 100, 601, 457);
+		setBounds(100, 100, 670, 548);
 		contentPane = new JPanel();
 		contentPane.setBorder(new EmptyBorder(5, 5, 5, 5));
 
@@ -43,12 +46,23 @@ public class AcadTreino2 extends JFrame {
 		
 		JLabel lblNewLabel_1_3 = new JLabel("Seu treino 2");
 		lblNewLabel_1_3.setFont(new Font("Tahoma", Font.PLAIN, 18));
-		lblNewLabel_1_3.setBounds(219, 11, 166, 29);
+		lblNewLabel_1_3.setBounds(269, 33, 166, 29);
 		contentPane.add(lblNewLabel_1_3);
 		
-		JLabel lblNewLabel = new JLabel("");
-		lblNewLabel.setIcon(new ImageIcon(AcadTreino2.class.getResource("/Interfaces/QR Code.jpg")));
-		lblNewLabel.setBounds(120, 65, 310, 291);
+		JButton btnBack2 = new JButton("Voltar");
+		btnBack2.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+				AcadMenu z2 = new AcadMenu();
+				z2.setVisible(true);
+				dispose();
+			}
+		});
+		btnBack2.setBounds(269, 441, 99, 29);
+		contentPane.add(btnBack2);
+		
+		JLabel lblNewLabel = new JLabel("New label");
+		lblNewLabel.setIcon(new ImageIcon(AcadTreino2.class.getResource("/Interfaces/Qr Code 2.2.jpg")));
+		lblNewLabel.setBounds(141, 73, 352, 357);
 		contentPane.add(lblNewLabel);
 	}
 

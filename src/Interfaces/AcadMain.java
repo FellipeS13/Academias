@@ -13,6 +13,8 @@ import javax.swing.JTextField;
 import javax.swing.JButton;
 import java.awt.event.ActionListener;
 import java.awt.event.ActionEvent;
+import javax.swing.ImageIcon;
+import java.awt.Color;
 
 public class AcadMain extends JFrame {
 
@@ -45,6 +47,8 @@ public class AcadMain extends JFrame {
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		setBounds(100, 100, 586, 436);
 		contentPane = new JPanel();
+		contentPane.setBackground(new Color(255, 128, 0));
+		contentPane.setForeground(new Color(255, 128, 0));
 		contentPane.setBorder(new EmptyBorder(5, 5, 5, 5));
 
 		setContentPane(contentPane);
@@ -66,16 +70,19 @@ public class AcadMain extends JFrame {
 		contentPane.add(lblNewLabel_1_2);
 		
 		JRadioButton rdbtnNewRadioButton = new JRadioButton("Hipertrofia");
+		rdbtnNewRadioButton.setBackground(new Color(255, 128, 0));
 		rdbtnNewRadioButton.setFont(new Font("Tahoma", Font.PLAIN, 18));
 		rdbtnNewRadioButton.setBounds(349, 77, 109, 23);
 		contentPane.add(rdbtnNewRadioButton);
 		
 		JRadioButton rdbtnEmagrecimento = new JRadioButton("Emagrecimento");
+		rdbtnEmagrecimento.setBackground(new Color(255, 128, 0));
 		rdbtnEmagrecimento.setFont(new Font("Tahoma", Font.PLAIN, 18));
 		rdbtnEmagrecimento.setBounds(349, 123, 166, 23);
 		contentPane.add(rdbtnEmagrecimento);
 		
 		JRadioButton rdbtnDefinio = new JRadioButton("Definição");
+		rdbtnDefinio.setBackground(new Color(255, 128, 0));
 		rdbtnDefinio.setFont(new Font("Tahoma", Font.PLAIN, 18));
 		rdbtnDefinio.setBounds(349, 170, 166, 23);
 		contentPane.add(rdbtnDefinio);
@@ -146,6 +153,14 @@ public class AcadMain extends JFrame {
 					AcadTreino2 f2 = new AcadTreino2();
 					f2.setVisible(true);
 				}
+				else if (txtSit.getText().equals("Ta Obeso")) {
+					AcadTreino3 f3 = new AcadTreino3();
+					f3.setVisible(true);
+				}
+				else if (txtSit.getText().equals("Abaixo do Peso")) {
+					AcadTreino4 f4 = new AcadTreino4();
+					f4.setVisible(true);
+				}
 				
 			}
 		});
@@ -156,5 +171,10 @@ public class AcadMain extends JFrame {
 		lblNewLabel_1_3.setFont(new Font("Tahoma", Font.PLAIN, 18));
 		lblNewLabel_1_3.setBounds(238, 11, 166, 29);
 		contentPane.add(lblNewLabel_1_3);
+		
+		JLabel lblNewLabel = new JLabel("");
+		lblNewLabel.setIcon(new ImageIcon(AcadMain.class.getResource("/Interfaces/gold-removebg-preview.png")));
+		lblNewLabel.setBounds(201, 321, 158, 51);
+		contentPane.add(lblNewLabel);
 	}
 }
