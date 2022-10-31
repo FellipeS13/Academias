@@ -69,11 +69,6 @@ public class AcadLogin extends JFrame {
 		txtSenha.setBounds(110, 300, 214, 40);
 		contentPane.add(txtSenha);
 		
-		JLabel lblNewLabel = new JLabel("");
-		lblNewLabel.setIcon(new ImageIcon("C:\\Users\\felli\\Desktop\\gold-removebg-preview.png"));
-		lblNewLabel.setBounds(141, 27, 153, 103);
-		contentPane.add(lblNewLabel);
-		
 		JButton btnLog = new JButton("Logar");
 		btnLog.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
@@ -98,6 +93,11 @@ public class AcadLogin extends JFrame {
 		});
 		btnNewButton.setBounds(151, 391, 122, 23);
 		contentPane.add(btnNewButton);
+		
+		JLabel lblNewLabel_2 = new JLabel("");
+		lblNewLabel_2.setIcon(new ImageIcon(AcadLogin.class.getResource("/Interfaces/gold-removebg-preview.png")));
+		lblNewLabel_2.setBounds(147, 60, 146, 69);
+		contentPane.add(lblNewLabel_2);
 	}
 
 }

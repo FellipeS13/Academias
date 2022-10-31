@@ -25,7 +25,6 @@ public class AcadBoxe extends JFrame {
 	private JTextField txtQi;
 	private JTextField txtSx;
 	private JTextField txtSb;
-	private JLabel lblNewLabel_1;
 	private JButton btnVoltar;
 
 	/**
@@ -49,7 +48,7 @@ public class AcadBoxe extends JFrame {
 	 */
 	public AcadBoxe() {
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-		setBounds(100, 100, 659, 446);
+		setBounds(100, 100, 600, 446);
 		contentPane = new JPanel();
 		contentPane.setBorder(new EmptyBorder(5, 5, 5, 5));
 
@@ -58,7 +57,7 @@ public class AcadBoxe extends JFrame {
 		
 		JLabel lblNewLabel = new JLabel("Horário Boxe");
 		lblNewLabel.setFont(new Font("Tahoma", Font.PLAIN, 24));
-		lblNewLabel.setBounds(242, 11, 217, 28);
+		lblNewLabel.setBounds(208, 11, 217, 28);
 		contentPane.add(lblNewLabel);
 		
 		table_1 = new JTable();
@@ -77,37 +76,37 @@ public class AcadBoxe extends JFrame {
 				return columnTypes[columnIndex];
 			}
 		});
-		table_1.setBounds(69, 85, 488, 144);
+		table_1.setBounds(37, 85, 488, 144);
 		contentPane.add(table_1);
 		
 		txtS = new JTextField();
 		txtS.setColumns(10);
-		txtS.setBounds(66, 240, 65, 20);
+		txtS.setBounds(37, 241, 65, 20);
 		contentPane.add(txtS);
 		
 		txtT = new JTextField();
 		txtT.setColumns(10);
-		txtT.setBounds(136, 240, 65, 20);
+		txtT.setBounds(107, 241, 65, 20);
 		contentPane.add(txtT);
 		
 		txtQ = new JTextField();
 		txtQ.setColumns(10);
-		txtQ.setBounds(205, 240, 65, 20);
+		txtQ.setBounds(176, 241, 65, 20);
 		contentPane.add(txtQ);
 		
 		txtQi = new JTextField();
 		txtQi.setColumns(10);
-		txtQi.setBounds(275, 240, 65, 20);
+		txtQi.setBounds(246, 241, 65, 20);
 		contentPane.add(txtQi);
 		
 		txtSx = new JTextField();
 		txtSx.setColumns(10);
-		txtSx.setBounds(344, 240, 65, 20);
+		txtSx.setBounds(315, 241, 65, 20);
 		contentPane.add(txtSx);
 		
 		txtSb = new JTextField();
 		txtSb.setColumns(10);
-		txtSb.setBounds(414, 240, 65, 20);
+		txtSb.setBounds(385, 241, 65, 20);
 		contentPane.add(txtSb);
 		
 		JButton btnNewButton = new JButton("Adicionar");
@@ -117,13 +116,8 @@ public class AcadBoxe extends JFrame {
 				model.addRow(new Object[] {(txtS.getText()), (txtT.getText()), (txtQ.getText()), (txtQi.getText()), (txtSx.getText()), (txtSb.getText())});
 			}
 		});
-		btnNewButton.setBounds(489, 239, 86, 23);
+		btnNewButton.setBounds(462, 240, 86, 23);
 		contentPane.add(btnNewButton);
-		
-		lblNewLabel_1 = new JLabel("");
-		lblNewLabel_1.setIcon(new ImageIcon("C:\\Users\\felli\\Desktop\\jabb40157c4e5f49e6490a237102344fea.jpg"));
-		lblNewLabel_1.setBounds(0, 38, 667, 380);
-		contentPane.add(lblNewLabel_1);
 		
 		btnVoltar = new JButton("Voltar");
 		btnVoltar.addActionListener(new ActionListener() {
@@ -133,8 +127,12 @@ public class AcadBoxe extends JFrame {
 				dispose();
 			}
 		});
-		btnVoltar.setBounds(509, 16, 89, 23);
+		btnVoltar.setBounds(485, 11, 89, 23);
 		contentPane.add(btnVoltar);
+		
+		JLabel lblNewLabel_2 = new JLabel("");
+		lblNewLabel_2.setIcon(new ImageIcon(AcadBoxe.class.getResource("/Interfaces/boxe-2-590x393.jpg")));
+		lblNewLabel_2.setBounds(0, 50, 643, 357);
+		contentPane.add(lblNewLabel_2);
 	}
-
 }

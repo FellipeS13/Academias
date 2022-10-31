@@ -26,6 +26,7 @@ public class AcadMusc extends JFrame {
 	private JTextField txtSex;
 	private JTextField txtSab;
 	private JButton btnBack4;
+	private JLabel lblNewLabel_2;
 
 	/**
 	 * Launch the application.
@@ -119,11 +120,6 @@ public class AcadMusc extends JFrame {
 		lblNewLabel.setBounds(235, 0, 217, 28);
 		contentPane.add(lblNewLabel);
 		
-		JLabel lblNewLabel_1 = new JLabel("");
-		lblNewLabel_1.setIcon(new ImageIcon("C:\\Users\\felli\\Desktop\\Dicas-para-quem-faz-musculação.jpg"));
-		lblNewLabel_1.setBounds(0, 36, 683, 360);
-		contentPane.add(lblNewLabel_1);
-		
 		btnBack4 = new JButton("Back");
 		btnBack4.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
@@ -134,5 +130,10 @@ public class AcadMusc extends JFrame {
 		});
 		btnBack4.setBounds(518, 9, 89, 23);
 		contentPane.add(btnBack4);
+		
+		lblNewLabel_2 = new JLabel("New label");
+		lblNewLabel_2.setIcon(new ImageIcon(AcadMusc.class.getResource("/Interfaces/Dicas-para-quem-faz-musculação.jpg")));
+		lblNewLabel_2.setBounds(0, 39, 683, 357);
+		contentPane.add(lblNewLabel_2);
 	}
 }

@@ -86,5 +86,10 @@ public class AcadNat extends JFrame {
 		});
 		btnBack3.setBounds(543, 7, 89, 23);
 		contentPane.add(btnBack3);
+		
+		JLabel lblNewLabel_2 = new JLabel("New label");
+		lblNewLabel_2.setIcon(new ImageIcon(AcadNat.class.getResource("/Interfaces/beneficios-da-nataccca7acc83o-para-corredores.jpg")));
+		lblNewLabel_2.setBounds(0, 75, 682, 320);
+		contentPane.add(lblNewLabel_2);
 	}
 }

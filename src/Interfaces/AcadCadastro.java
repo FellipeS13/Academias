@@ -108,7 +108,7 @@ public class AcadCadastro extends JFrame {
 		contentPane.add(btnNewButton);
 		
 		JLabel lblNewLabel = new JLabel("New label");
-		lblNewLabel.setIcon(new ImageIcon("C:\\Users\\felli\\Desktop\\girl-3253532_960_720.jpg"));
+		lblNewLabel.setIcon(new ImageIcon(AcadCadastro.class.getResource("/Interfaces/girl-3253532_960_720.jpg")));
 		lblNewLabel.setBounds(0, 0, 641, 504);
 		contentPane.add(lblNewLabel);
 	}
